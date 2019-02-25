@@ -1,4 +1,6 @@
 var container = document.getElementById('container');
+
+
 /*You can specify optional parameters by setting them equal to a value in the function
 function countdown(initial, final = 0, interval = 1) {
     var current = initial;
@@ -9,6 +11,8 @@ function countdown(initial, final = 0, interval = 1) {
     }
 }
 */
+
+
 
 /**
  * To specify string template, use backticks
@@ -21,6 +25,9 @@ function countdown(initial, final = 0, interval = 1) {
     name: "Find a life purpose",
     completed: false
 };
- * container.innerHTML = "<div todo = '" + todo.name + "' class =\"list-group-item\">\n <i class=\"" + (todo.completed ? "" : "hidden") + " text-success glyphicon glyphicon-ok\"></i>\n <span class=\"name\">" + todo.name + "</span>\n</div>";
+ * container.innerHTML = `<div todo = '${todo.name}' class ="list-group-item">
+ <i class="${ todo.completed ? "": "hidden"} text-success glyphicon glyphicon-ok"></i>
+ <span class="name">${todo.name}</span>
+</div>`
  */
 
